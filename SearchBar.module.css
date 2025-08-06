@@ -1,0 +1,42 @@
+.searchBar {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.searchBar input {
+  width: 300px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.searchBar button {
+  margin-left: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #0a0a2a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.searchBar button:hover {
+  background-color: #1a1a3a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .searchBar input {
+    width: 80vw;
+    max-width: 400px;
+  }
+
+  .searchBar button {
+    margin-left: 0.5rem;
+    padding: 0.7rem 1rem;
+  }
+}

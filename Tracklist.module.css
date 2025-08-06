@@ -1,0 +1,5 @@
+.TrackList {
+  display: flex;
+  flex-direction: column;
+  /* You can add spacing if needed */
+}

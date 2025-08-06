@@ -1,0 +1,50 @@
+.Playlist {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.06); /* Transparent card */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  backdrop-filter: blur(4px); /* Optional glassy look */
+}
+
+.Playlist input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border, #ccc);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.Playlist input:focus {
+  border-color: var(--input-border-focus, #1db954);
+  outline: none;
+}
+
+.Playlist button {
+  padding: 10px 16px;
+  background-color: var(--primary-color, #1db954);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.Playlist button:hover,
+.Playlist button:focus {
+  background-color: var(--primary-hover, #17a74a);
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Playlist {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+}

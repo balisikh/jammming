@@ -1,0 +1,46 @@
+.Track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.TrackInfo h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.TrackInfo p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.TrackAction {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1db954;
+}
+
+.TrackAction:hover {
+  color: #17a74a;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .Track {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .TrackAction {
+    align-self: flex-end;
+    margin-top: 8px;
+  }
+}

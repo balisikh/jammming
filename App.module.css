@@ -1,0 +1,83 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #1db954;
+  --primary-hover: #17a74a;
+  --input-border: #ccc;
+  --input-border-focus: #1db954;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #1db954;
+  --primary-hover: #17a74a;
+  --input-border: #555;
+  --input-border-focus: #1db954;
+}
+
+/* New main container with gradient + image */
+.app {
+  background: linear-gradient(to bottom right, #3b0066, #1a0033), url('/path/to/background.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 2rem;
+  color: white; /* force white text on gradient/image background */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Override colors inside .app if you want to use variables for things like buttons */
+.app .Header {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.AppContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ToggleButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.ToggleButton:hover,
+.ToggleButton:focus {
+  background-color: var(--primary-hover);
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .AppContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Header {
+    font-size: 36px;
+  }
+}
